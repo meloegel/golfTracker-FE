@@ -3,7 +3,10 @@ export default function AddRound() {
     <div>
       <h1>Add Round</h1>
       <form>
-        <input value="" onChange={() => {}} name="" type="text" />
+        <input value="date" onChange={() => {}} name="" type="text" />
+        <input value="totalScore" onChange={() => {}} name="" type="text" />
+        <input value="courseName" onChange={() => {}} name="" type="text" />
+        <input value="description" onChange={() => {}} name="" type="text" />
       </form>
     </div>
   );

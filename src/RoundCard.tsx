@@ -16,11 +16,11 @@ export default function RoundCard({
   user,
 }: RoundCardType): JSX.Element {
   return <div>
-    <h3>{roundid}</h3>
-    <h3>{date.toDateString()}</h3>
-    <h3>{totalScore}</h3>
-    <h3>{courseName}</h3>
-    <h3>{description}</h3>
-    <h3>{user}</h3>
+    <h3>Round id: {roundid}</h3>
+    <h3>Date: {date.toDateString()}</h3>
+    <h3>Total Score: {totalScore}</h3>
+    <h3>Course Name: {courseName}</h3>
+    <h3>Description{description}</h3>
+    <h3>User: {user}</h3>
   </div>;
 }

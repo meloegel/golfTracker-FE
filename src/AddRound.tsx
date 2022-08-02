@@ -8,13 +8,13 @@ export default function AddRound() {
 
   const onSubmit = () => {
     const headers = {
-      "Content-Type": "application/json"
-    }
+      "Content-Type": "application/json",
+    };
     request(``, {
       method: "POST",
       headers: headers,
-    })
-  }
+    });
+  };
 
   useEffect(() => {
     if (data) {
@@ -30,6 +30,7 @@ export default function AddRound() {
         <input value="totalScore" onChange={() => {}} name="" type="text" />
         <input value="courseName" onChange={() => {}} name="" type="text" />
         <input value="description" onChange={() => {}} name="" type="text" />
+        <button onClick={() => onSubmit()}>Submit Round</button>
       </form>
     </div>
   );

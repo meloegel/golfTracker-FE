@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useFetch from "./hooks/useFetch";
-import RoundCard from "./RoundCard";
+import RoundCard from "./round/RoundCard";
 
 export default function Dashboard() {
   const [request, data] = useFetch<any>();

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AddRound from "./AddRound";
+import AddRound from "./round/AddRound";
 import "./App.css";
 import Dashboard from "./Dashboard";
 

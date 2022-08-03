@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import useFetch from "./hooks/useFetch";
+import useFetch from "../hooks/useFetch";
 
 export default function AddRound() {
   const navigate = useNavigate();

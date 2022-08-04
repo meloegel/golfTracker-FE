@@ -1,5 +1,5 @@
-type RoundCardType = {
-  roundid: number;
+export type RoundType = {
+  roundId: number;
   date: Date;
   totalScore: number;
   courseName: string;
@@ -8,19 +8,21 @@ type RoundCardType = {
 };
 
 export default function RoundCard({
-  roundid,
+  roundId,
   date,
   totalScore,
   courseName,
   description,
   user,
-}: RoundCardType): JSX.Element {
-  return <div>
-    <h3>Round id: {roundid}</h3>
-    <h3>Date: {date.toDateString()}</h3>
-    <h3>Total Score: {totalScore}</h3>
-    <h3>Course Name: {courseName}</h3>
-    <h3>Description{description}</h3>
-    <h3>User: {user}</h3>
-  </div>;
+}: RoundType): JSX.Element {
+  return (
+    <div>
+      <h3>Round id: {roundId}</h3>
+      <h3>Date: {date.toDateString()}</h3>
+      <h3>Total Score: {totalScore}</h3>
+      <h3>Course Name: {courseName}</h3>
+      <h3>Description{description}</h3>
+      <h3>User: {user}</h3>
+    </div>
+  );
 }

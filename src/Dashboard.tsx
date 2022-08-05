@@ -8,20 +8,19 @@ export default function Dashboard() {
 
   useEffect(() => {
     const headers = {
-      "Content-Type": "application/json"
-    }
+      "Content-Type": "application/json",
+    };
     request("http://localhost:8080/rounds", {
       method: "GET",
       headers: headers,
-    })
-  }, [request])
+    });
+  }, [request]);
 
   useEffect(() => {
     if (data) {
-      setRounds(data)
+      setRounds(data);
     }
-  }, [data])
-
+  }, [data]);
 
   return (
     <div>
@@ -30,7 +29,7 @@ export default function Dashboard() {
         ? rounds.map((round, key): any => (
             <RoundCard
               key={key}
-              roundid={round.roundid}
+              roundId={round.roundId}
               date={round.date}
               totalScore={round.totalScore}
               courseName={round.courseName}

@@ -18,7 +18,7 @@ export default function AddRound() {
 
   useEffect(() => {
     if (data) {
-      navigate("/");
+      navigate("/dashboard");
     }
   });
 

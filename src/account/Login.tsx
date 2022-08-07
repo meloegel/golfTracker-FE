@@ -29,6 +29,7 @@ export default function Login(): JSX.Element {
       <input value="username" onChange={() => {}} name="username" type="text" />
       <input value="password" onChange={() => {}} name="password" type="text" />
       <button onClick={() => onSubmit()}>Login</button>
+      <button onClick={() => {}}>Register</button>
       </form>
     </div>
   );
